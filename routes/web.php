@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/contact', 'ContactsController@contact')->name('contact');
+
+Route::post('/contact', 'ContactsController@contact')->name('contact.store');
+
+Route::get('/thanks/{name}', 'ContactsController@thanks')->name('thanks');

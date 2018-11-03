@@ -30,8 +30,5 @@ class DeleteUserTest extends TestCase
 
         $this->assertTrue($findInsertedUser->delete());
 
-        if($findInsertedUser){
-            $findInsertedUser->delete();
-        }
     }
 }

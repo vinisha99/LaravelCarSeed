@@ -23,6 +23,6 @@ Route::get('/about', 'AboutPageController@about')->name('about');
 
 Route::get('/contact', 'ContactsController@contact')->name('contact');
 
-Route::post('/contact', 'ContactsController@contact')->name('contact.store');
+Route::post('/contact', 'ContactsController@store')->name('contact.store');
 
 Route::get('/thanks/{name}', 'ContactsController@thanks')->name('thanks');
